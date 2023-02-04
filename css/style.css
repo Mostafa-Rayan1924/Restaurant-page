@@ -162,6 +162,12 @@ width: 50%;
 .main-btn:hover::before{
     width: 100%;
 }
+@media (max-width: 565px) {
+    .header .main-btn{
+padding: 6px 12px ;
+font-size: 14px;
+    }
+}
 /* end nav */
 /* intro */
 .intro{
@@ -347,9 +353,6 @@ color: white;
     .burger .box{
         margin-bottom: 20px;
     }
-}
-.burger.divider::after{
-    background-image: url(../img/shape-white.png);
 }
 
 /* end burger */
@@ -568,14 +571,7 @@ transform: translateX(0px);
 
 /* end delivery */
 /* end review */
-.divider::after{
-    position: absolute;
-    content: "";
-    bottom: 0;
-    width: 100%;
-    height: 15px;
-    background-image: url(../img/shape-white.png);
-}
+
 /* gallery */
 .gallery img{
     object-fit: cover;
